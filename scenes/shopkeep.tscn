@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3ufhn7qww7uw"]
+
+[ext_resource type="Script" path="res://scripts/Shopkeep.cs" id="1_8qebw"]
+[ext_resource type="Texture2D" uid="uid://danqk0ybjet2r" path="res://assets/characters/shopkeep.png" id="1_l640j"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_47eh7"]
+
+[node name="shopkeep" type="CharacterBody2D"]
+script = ExtResource("1_8qebw")
+
+[node name="shopkeepSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_l640j")
+
+[node name="shopkeepHitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+scale = Vector2(2.9331, 3.32597)
+shape = SubResource("CapsuleShape2D_47eh7")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

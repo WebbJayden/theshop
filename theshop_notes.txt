@@ -1,0 +1,9 @@
+theshop_notes
+
+shopkeep (CharacterBody2D)
+- CollisionShape
+	- Transitional animation:
+	Upon mouse entered event, switch to different still of shopkeep
+	
+	- Interaction:
+	If mouse input right click and in collision shape, trigger shopkeep menu/dialogue

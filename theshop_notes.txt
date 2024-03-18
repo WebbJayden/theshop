@@ -7,3 +7,8 @@ shopkeep (CharacterBody2D)
 	
 	- Interaction:
 	If mouse input right click and in collision shape, trigger shopkeep menu/dialogue
+	
+Player (CharacterBody2D)
+- Game World Area Transistions
+	- upon entering area, switch to new game scene
+	Walk up to a door, trigger event to open door, change game scene to new area 

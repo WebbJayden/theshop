@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bivoicy055ehk"]
 
-[ext_resource type="Script" path="res://scenes/DialogueManager.cs" id="1_cgew3"]
+[ext_resource type="Script" path="res://scripts/DialogueManager.cs" id="1_cgew3"]
 
 [node name="DialogueManager" type="Control"]
 layout_mode = 3
@@ -10,5 +10,6 @@ offset_bottom = 40.0
 script = ExtResource("1_cgew3")
 
 [node name="Dialogue" type="Label" parent="."]
+layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0

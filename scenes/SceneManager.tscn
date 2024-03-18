@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://d3cmcl7227u4a"]
+
+[ext_resource type="Script" path="res://scripts/SceneManager.cs" id="1_u7iki"]
+[ext_resource type="Texture2D" uid="uid://df7wfgwiv14kt" path="res://icon.svg" id="2_6c0p5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lk1xf"]
+
+[node name="SceneManager" type="Area2D"]
+script = ExtResource("1_u7iki")
+
+[node name="SceneCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lk1xf")
+
+[node name="SceneSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_6c0p5")

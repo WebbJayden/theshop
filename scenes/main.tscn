@@ -1,9 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://bk0g4vdgtov1y"]
+[gd_scene load_steps=3 format=3 uid="uid://bk0g4vdgtov1y"]
 
 [ext_resource type="PackedScene" uid="uid://bfyy45o1q2ds8" path="res://scenes/Player.tscn" id="1_yb65n"]
+[ext_resource type="PackedScene" uid="uid://d3cmcl7227u4a" path="res://scenes/SceneManager.tscn" id="2_3rawv"]
 
 [node name="main" type="Node2D"]
 
+[node name="SceneManager" parent="." instance=ExtResource("2_3rawv")]
+position = Vector2(301, 238)
+scale = Vector2(-0.40516, 0.378269)
+
 [node name="Player" parent="." instance=ExtResource("1_yb65n")]
-position = Vector2(84, 145)
+position = Vector2(141, 183)
 _speed = 300.0

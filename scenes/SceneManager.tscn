@@ -6,10 +6,15 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lk1xf"]
 
 [node name="SceneManager" type="Area2D"]
+light_mask = 4
+visibility_layer = 4
 script = ExtResource("1_u7iki")
-
-[node name="SceneCollision" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_lk1xf")
 
 [node name="SceneSprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_6c0p5")
+
+[node name="SceneCollision" type="CollisionShape2D" parent="."]
+scale = Vector2(6.28032, 6.12687)
+shape = SubResource("RectangleShape2D_lk1xf")
+
+[connection signal="body_entered" from="." to="." method="_on_scenemanager_entered"]

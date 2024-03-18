@@ -6,6 +6,8 @@
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_47eh7"]
 
 [node name="shopkeep" type="CharacterBody2D"]
+light_mask = 2
+visibility_layer = 2
 script = ExtResource("1_8qebw")
 
 [node name="shopkeepSprite" type="Sprite2D" parent="."]

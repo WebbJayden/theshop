@@ -1,22 +1,29 @@
 using Godot;
 using System;
-using System.Security.Cryptography.X509Certificates;
 
-public partial class SceneManager : Area2D
+public partial class SceneManager : Node
 {
-    // get the current scene property
-    public Node CurrentScene { get; set; }
+    
 
-    // get/set next scene property
-    public Node NextScene { get; set; }
+    // change scene method that takes the path directory as an argument
+    public void ChangeScene(string path)
+    {
+        // get path of desired scene
+        Global.CurrentScenePath = path;
+
+        // get scene tree
+        var tree = GetTree();
+
+        // change scene to desired paths scene
+        tree.ChangeSceneToFile(path);
+    }
 
     // Collision detection
     public void _on_scenemanager_entered(CharacterBody2D body)
     {
         GD.Print($"Scene Manager entered: {body}");
+
+        // if player enters SceneCollision, change scene
+
     }
-
-    // if player enters SceneCollision, change scene
-
-
 }

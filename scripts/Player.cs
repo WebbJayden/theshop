@@ -44,8 +44,6 @@ public partial class Player : CharacterBody2D
         // get velocity based off direction and speed
         Velocity = _direction * _speed;
 
-        GD.Print($"velocity: {Velocity}");
-
         // move character based on _velocity value
         MoveAndSlide();
 
